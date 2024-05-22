@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Registro de cancion para el concurso</h1> <!-- titulo -->
+    <form action="#" name="envio_datos"> 
+        <h5 style="background:#c3f901 ;">Datos del usuario</h5> 
+        <label for="nombre">Nombres</label> <!-- nombre que debemos enviar  -->
+        <input type="text" name="nombre" id="Nombres" placeholder="Ingrese su nombre" required>  <!-- envia datos, placer holder (texto fantasma que ayuda a insertar datos) -->
+        <br>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" placeholder="Ingrese su password" required>
+        <br>
+        <label for="sexo"><b>Seleccione su sexo</b></label> <br>
+        <input type="radio" name="sexo" value="masculino">Masculino <br>
+        <input type="radio" name="sexo" value="femenino">femenino <br>
+        <br>
+        <label for="Pais">Pais</label> 
+        <select name="Pais id="Pais"> <!-- Creamos un selector de datos y con option ponemos los datos para seleccionar -->
+            <option value="Perú">Perú</option>
+            <option value="Argentina">Argentina</option>
+            <option value="Chile">Chile</option>
+            <option value="Paraguay">Paraguay</option>
+        </select>
+        <br>
+        <h5 style="background: #c3f901;">Datos de la musica</h5><br>
+        <label for="Tipo_Musica"><b>Seleccione el tipo de musica</b></label> <br>
+        <input type="checkbox" name="musica" value="clasica">clasica <br>
+        <input type="checkbox" name="musica" value="rock">rock <br>
+        <input type="checkbox" name="musica" value="ponk">ponk <br>
+        <br>
+        <label for="archivo"><b>Seleccione la cancion a enviar</b></label>
+        <input type="file" name="archivo" >
+        <br>
+        <br>
+        <label for="mensaje">Ingrese un mensaje</label> <br>
+        <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea><br> <!-- textarea es para escribir un mensaje largo -->
+        <input type="submit" value="enviar">
+        <input type="reset" value="Limpiar">
+        <button type="button" onclick="alert"("Hola mundo")">Saludo</button>
+    </form>
+</body>
+</html>
